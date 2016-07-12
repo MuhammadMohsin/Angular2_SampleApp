@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+.form-container{
+  max-width: 500px;
+  display: block;
+  margin: 0 auto; 
+  margin-top: 50px;
+}
+.form-container > img{
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.form-container>label{
+  width: 100%;
+}
