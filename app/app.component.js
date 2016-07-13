@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'login-form',
-            template: "\n  <div class=\"form-container\">\n    <img src=\"images/logo.jpg\" alt=\"logo\" class=\"img-responsive\">\n \n    <label>Email:<br />\n        <input type=\"text\" name=\"userEmail\" class=\"form-control\" />\n    </label> <br />\n    \n    <label>Password:<br />\n        <input type=\"password\" name=\"userPass\" class=\"form-control\" />\n    </label> <br />\n    <br />\n    <button class=\"btn btn-block btn-primary\"> Login </button>\n</div>"
+            template: "\n  <form class=\"form-container\">\n    <img src=\"images/logo.jpg\" alt=\"logo\" class=\"img-responsive\">\n \n    <label>Email:<br />\n        <input type=\"email\" name=\"userEmail\" class=\"form-control\" required />\n    </label> <br />\n    \n    <label>Password:<br />\n        <input type=\"password\" name=\"userPass\" class=\"form-control\" required/>\n    </label> <br />\n    <br />\n    <input type=\"submit\" class=\"btn btn-block btn-primary\" value=\"Login\">\n</form>"
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
