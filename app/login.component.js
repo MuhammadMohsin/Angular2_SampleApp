@@ -10,18 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var AppComponent = (function () {
-    function AppComponent() {
+var LoginComponent = (function () {
+    function LoginComponent() {
     }
-    AppComponent = __decorate([
+    LoginComponent = __decorate([
         core_1.Component({
-            selector: 'login-form',
-            template: "<router-outlet></router-outlet>",
+            selector: 'login',
+            template: "\n  <form class=\"form-container\">\n      <img src=\"images/logo.jpg\" alt=\"logo\" class=\"img-responsive\">\n  \n      <label>Email:<br />\n          <input type=\"email\" name=\"userEmail\" class=\"form-control\" />\n      </label> <br />\n      \n      <label>Password:<br />\n          <input type=\"password\" name=\"userPass\" class=\"form-control\"/>\n      </label> <br />\n      <br />\n      <input type=\"submit\" [routerLink]=\"['/page2']\" class=\"btn btn-block btn-primary\" value=\"Login\">\n  </form>",
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], LoginComponent);
+    return LoginComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.LoginComponent = LoginComponent;
+//# sourceMappingURL=login.component.js.map
