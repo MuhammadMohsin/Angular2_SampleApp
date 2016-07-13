@@ -9,17 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Page2Component = (function () {
-    function Page2Component() {
+var router_1 = require('@angular/router');
+var AppComponent = (function () {
+    function AppComponent() {
     }
-    Page2Component = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
-            selector: 'page2',
-            template: '<h1>Page 2 of Angular 2 App</h1>'
+            selector: 'app-initializer',
+            template: "<router-outlet></router-outlet>",
+            directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
-    ], Page2Component);
-    return Page2Component;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.Page2Component = Page2Component;
-//# sourceMappingURL=page2.component.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=initializer.component.js.map

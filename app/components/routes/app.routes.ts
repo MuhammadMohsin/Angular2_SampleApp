@@ -1,6 +1,6 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
-import { LoginComponent } from './login.component';
-import { Page2Component } from './page2.component';
+import { LoginComponent } from '../login/login.component';
+import { dashboardComponent } from '../dashboard/dashboard.component';
 
 export const routes: RouterConfig = [
   {
@@ -8,8 +8,8 @@ export const routes: RouterConfig = [
     component: LoginComponent
   },
   {
-    path: 'page2',
-    component: Page2Component
+    path: 'dashboard',
+    component: dashboardComponent
   },
   { path: '', 
     component: LoginComponent 

@@ -3,7 +3,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 
 
 @Component({
-  selector: 'login-form',
+  selector: 'app-initializer',
   template: `<router-outlet></router-outlet>`,
   directives: [ROUTER_DIRECTIVES]
 })

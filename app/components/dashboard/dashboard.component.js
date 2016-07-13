@@ -9,17 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Page1Component = (function () {
-    function Page1Component() {
+var dashboardComponent = (function () {
+    function dashboardComponent() {
     }
-    Page1Component = __decorate([
+    dashboardComponent = __decorate([
         core_1.Component({
-            selector: 'login',
-            template: '<h1>Page 1 of Angular 2 App</h1>'
+            selector: 'dashboard',
+            template: '<h1>Welcome to dashboard</h1>'
         }), 
         __metadata('design:paramtypes', [])
-    ], Page1Component);
-    return Page1Component;
+    ], dashboardComponent);
+    return dashboardComponent;
 }());
-exports.Page1Component = Page1Component;
-//# sourceMappingURL=login.js.map
+exports.dashboardComponent = dashboardComponent;
+//# sourceMappingURL=dashboard.component.js.map
