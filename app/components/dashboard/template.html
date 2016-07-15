@@ -1,3 +1,6 @@
+<nav class="navbar navbar-inverse">
+  <a [routerLink]="['/login']"> <img src="app/images/exit.png" alt="logout"/> </a>
+</nav>
 <div class="dasbhboard-container">
   <form class="form" *ngIf="showCompose" (ngSubmit)="postTweet()">
       <label>Write Post: </label>

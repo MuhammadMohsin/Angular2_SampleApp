@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
   selector: 'dashboard',
-  templateUrl: 'app/components/dashboard/template.html'
+  templateUrl: 'app/components/dashboard/template.html',
+  directives: [ROUTER_DIRECTIVES]
 })
 export class dashboardComponent { 
   showCompose : boolean;
