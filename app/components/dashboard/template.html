@@ -1,8 +1,26 @@
 <div class="dasbhboard-container">
-  <h1> Recent Tweets</h1>
+  <form class="form" *ngIf="showCompose" (ngSubmit)="postTweet()">
+      <label>Write Post: </label>
+      <br />
+          <textarea class="form-control" rows="3" 
+        [(ngModel)]="tweetMsg" required></textarea>
+      <br />
+      <input type="submit" class="btn pull-right btn-primary" value="Post">
+  </form>
+  
+  <div class="row"> 
+    <div class="pull-left">
+      <h1> Recent Tweets</h1>
+    </div>
+    <div class="pull-right" *ngIf="!showCompose">
+      <button class="btn btn-warning compose-btn" (click)="showComposeTweet()" > Compose </button>
+    </div>
+  </div>
+  
   <div class="panel panel-primary" *ngFor="let data of dataSet">
     <div class="panel-heading">
       <h2 class="panel-title"> {{data.title}}</h2>
+      <span class="pull-right" style="margin-top: -18px;"> {{data.timestamp}}</span>
     </div>
     <div class="panel-body">
       {{data.desc}}
